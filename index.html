@@ -22,12 +22,13 @@
                 </div>
                 <div class="col-md-4  mb-2">
                     <label for="cvcCardForm" class="form-label">Cvc #</label>
-                    <input type="tel" class="form-control" id="cvcCardForm" aria-describedby="cardCvc" placeholder="0000" required>
+                    <input type="tel" class="form-control" id="cvcCardForm" aria-describedby="cardCvc" placeholder="0000" max="9999" required>
                 </div>
                 <div class="col-md-4  mb-2 position-relative">
                     <span class="position-absolute top-50 start-0">$</span>
                     <label for="amount" class="form-label">Amount</label>
-                    <input type="tel" class="form-control d-inline" id="amount" aria-describedby="amount" placeholder="Amount" required>
+                    <input type="number" class="form-control d-inline" id="amount" aria-describedby="amount" placeholder="Amount" step="0.01" 
+					min="0"  required>
                 </div>
             </div>
 
@@ -51,7 +52,24 @@
                 </div>
                 <div class="col-md-3  mb-2">
                     <label for="state" class="form-label">State</label>
-                    <input type="number" class="form-control" id="state" aria-describedby="State" placeholder="Pick a state" >
+						<select class="form-control" id="exampleFormControlSelect1" placeholder="Pick a state">
+						 <option selected disabled>Pick a state</option>
+						  <option>Florida</option>
+						  <option>Ohio</option>
+						  <option>Chicago</option>
+						  <option>Georgia</option>
+						  <option>Utah</option>
+						  <option>California</option>
+						<option>New York</option>
+						<option>Texas</option>
+						<option>Alabama</option>
+						<option>Arizona</option>
+						<option>Mississippi</option>
+						<option>Nevada</option>
+						<option>North Carolina</option>
+						<option>South Dakota</option>
+</select>
+					  
                 </div>
                 <div class="col-md-3  mb-2">
                     <label for="postalCode" class="form-label">Postal code</label>
